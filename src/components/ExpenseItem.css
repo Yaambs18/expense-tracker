@@ -39,6 +39,8 @@
 
   .expense-item__location {
     font-size: 1rem;
+    font-weight: bold;
+    color: white;
     display: flex;
     flex-direction: column;
     gap: 1rem;

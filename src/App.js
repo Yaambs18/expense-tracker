@@ -1,4 +1,5 @@
-import ExpenseItem from './components/ExpenseItem';
+import React from 'react';
+import Expenses from './components/Expenses';
 import './App.css';
 
 function App() {
@@ -26,14 +27,10 @@ function App() {
       location: 'Aligarh',
     },
   ];
-  const expenseComp = [];
-  for (const expense of expenses) {
-    expenseComp.push(<ExpenseItem expense={expense}></ExpenseItem>);
-  }
   return (
-    <div className="App">
+    <div>
       <h1>Let's get started!</h1>
-      {expenseComp}
+      <Expenses expenses={expenses}/>
     </div>
   );
 }

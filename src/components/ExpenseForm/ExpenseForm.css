@@ -26,4 +26,8 @@
     .add-expense {
         text-align: right;
     }
+
+    .cancel-expense {
+        text-align: right;
+    }
 }

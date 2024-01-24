@@ -59,7 +59,7 @@ const ExpenseForm = (props) => {
     const submitFormHandler = (event) => {
         event.preventDefault();
         expenseObj.title = enteredTitle;
-        expenseObj.amount = enteredAmount;
+        expenseObj.amount = +enteredAmount;
         expenseObj.location = enteredLocation;
         expenseObj.date = new Date(enteredDate);
         // console.log(expenseObj);
@@ -98,7 +98,7 @@ const ExpenseForm = (props) => {
                     <button id="submitBtn" type="submit" onClick={submitFormHandler}>Add Expense</button>
                 </div>
                 <div className="cancel-expense">
-                    <button id="cancelBtn" type="submit" onClick={cancelFormHandler}>Cancel Expense</button>
+                    <button id="cancelBtn" type="button" onClick={cancelFormHandler}>Cancel Expense</button>
                 </div>
             </div>
         </form>
